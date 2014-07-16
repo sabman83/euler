@@ -45,21 +45,3 @@ end
 def print_time t,n
   puts "time taken for #{n} :" + ((Time.now.nsec - t.nsec)/1000).to_s + ' macro seconds'
 end
-
-sum = sum_of_multiples_below_n(10,3,5)
-result = (sum == 23) ? 'success!' : 'fail! Expected 23 instead got ' + sum.to_s
-puts result
-
-sum = sum_of_multiples_below_n(1000,3,5)
-result = (sum == 233168) ? 'success!' : 'fail! Expected  233168 instead got ' + sum.to_s
-puts result
-
-sum = sum_of_multiples(10,3,5)
-result = (sum == 23) ? 'success!' : 'fail! Expected 23 instead got ' + sum.to_s
-puts result
-
-sum = sum_of_multiples(1000,3,5)
-result = (sum == 233168) ? 'success!' : 'fail! Expected  233168 instead got ' + sum.to_s
-puts result
-
-puts sum_of_multiples_below_n 10000,3,5
